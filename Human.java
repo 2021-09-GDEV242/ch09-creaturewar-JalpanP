@@ -39,9 +39,12 @@ public class Human extends Creature
           
     }
     
+    public boolean checkHpRange(){
+        return (getHealth() > MIN_HUMAN_HP && getHealth() <= MAX_HUMAN_HP);
+    }
     
-    // attack() - not overridden because Humans generate basic damage
-    // takeDamage(int) - not overridden, because Humans take all damage assigned to them
-
+    public boolean checkStrRange(){
+        return (getStrenght() > MIN_HUMAN_STR && getStrenght() <= MAX_HUMAN_STR);
+    }
     
 }
