@@ -79,4 +79,11 @@ public abstract class Creature
         // TODO: implement this
     }
     
+    public int getHealth(){
+        return hp;
+    }
+    
+    public int getStrenght(){
+        return str;
+    }
 }
